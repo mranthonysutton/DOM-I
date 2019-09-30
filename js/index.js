@@ -51,3 +51,37 @@ let navigationItem = document.querySelectorAll("a");
 navigationItem.forEach((item, index) => {
   item.textContent = siteContent["nav"][`nav-item-${index}`];
 });
+
+// CTA
+const ctaH1 = document.querySelector(".cta-text h1");
+ctaH1.textContent = siteContent["cta"]["h1"];
+
+const ctaButton = document.querySelector("button");
+ctaButton.textContent = siteContent["cta"]["button"];
+
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.src = "img/header-img.png";
+
+// Main Content
+// Top Content
+const topContentFeaturesH4 = document.querySelectorAll(
+  ".top-content .text-content h4"
+);
+const topContentFeaturesP = document.querySelectorAll(
+  ".top-content .text-content p"
+);
+
+topContentFeaturesH4[0].textContent =
+  siteContent["main-content"]["features-h4"];
+topContentFeaturesH4[1].textContent = siteContent["main-content"]["about-h4"];
+
+topContentFeaturesP[0].textContent =
+  siteContent["main-content"]["features-content"];
+topContentFeaturesP[1].textContent =
+  siteContent["main-content"]["about-content"];
+
+// IMG
+const featureIMG = document.querySelector(".middle-img");
+featureIMG.src = "img/mid-page-accent.jpg";
+
+// Lower Content
