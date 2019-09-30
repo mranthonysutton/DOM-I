@@ -81,7 +81,7 @@ topContentFeaturesP[1].textContent =
   siteContent["main-content"]["about-content"];
 
 // IMG
-const featureIMG = document.querySelector(".middle-img");
+const featureIMG = document.querySelector("#middle-img");
 featureIMG.src = "img/mid-page-accent.jpg";
 
 // Lower Content
@@ -105,3 +105,16 @@ bottomContentFeaturesP[1].textContent =
   siteContent["main-content"]["product-content"];
 bottomContentFeaturesP[2].textContent =
   siteContent["main-content"]["vision-content"];
+
+// Contact Section
+const contactH4 = document.querySelector(".contact h4");
+const contactParagraphs = document.querySelectorAll(".contact p");
+
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+contactParagraphs[0].textContent = siteContent["contact"]["address"];
+contactParagraphs[1].textContent = siteContent["contact"]["phone"];
+contactParagraphs[2].textContent = siteContent["contact"]["email"];
+
+// Footer Section
+const footerParagraph = document.querySelector("footer p");
+footerParagraph.textContent = siteContent["footer"]["copyright"];
