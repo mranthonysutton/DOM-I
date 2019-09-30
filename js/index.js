@@ -49,7 +49,23 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 // Navigation Items
 let navigationItem = document.querySelectorAll("a");
 navigationItem.forEach((item, index) => {
-  item.textContent = siteContent["nav"][`nav-item-${index}`];
+  item.textContent = siteContent["nav"][`nav-item-${index + 1}`];
+});
+
+const nav = document.querySelector("nav");
+
+const appendLink = document.createElement("a");
+appendLink.textContent = "Blog";
+appendLink.style.color = "green";
+nav.append(appendLink);
+
+const prependLink = document.createElement("a");
+prependLink.textContent = "Home";
+prependLink.style.color = "green";
+nav.prepend(prependLink);
+
+navigationItem.forEach(nav => {
+  nav.style.color = "green";
 });
 
 // CTA
