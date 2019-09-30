@@ -85,3 +85,23 @@ const featureIMG = document.querySelector(".middle-img");
 featureIMG.src = "img/mid-page-accent.jpg";
 
 // Lower Content
+const bottomContentFeaturesH4 = document.querySelectorAll(
+  ".bottom-content .text-content h4"
+);
+const bottomContentFeaturesP = document.querySelectorAll(
+  ".bottom-content .text-content p"
+);
+
+bottomContentFeaturesH4[0].textContent =
+  siteContent["main-content"]["services-h4"];
+bottomContentFeaturesH4[1].textContent =
+  siteContent["main-content"]["product-h4"];
+bottomContentFeaturesH4[2].textContent =
+  siteContent["main-content"]["vision-h4"];
+
+bottomContentFeaturesP[0].textContent =
+  siteContent["main-content"]["services-content"];
+bottomContentFeaturesP[1].textContent =
+  siteContent["main-content"]["product-content"];
+bottomContentFeaturesP[2].textContent =
+  siteContent["main-content"]["vision-content"];
