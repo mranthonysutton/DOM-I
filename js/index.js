@@ -70,7 +70,7 @@ navigationItem.forEach(nav => {
 
 // CTA
 const ctaH1 = document.querySelector(".cta-text h1");
-ctaH1.textContent = siteContent["cta"]["h1"];
+ctaH1.innerHTML = "DOM<br /> IS <br /> Awesome";
 
 const ctaButton = document.querySelector("button");
 ctaButton.textContent = siteContent["cta"]["button"];
