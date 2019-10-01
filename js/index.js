@@ -134,3 +134,10 @@ contactParagraphs[2].textContent = siteContent["contact"]["email"];
 // Footer Section
 const footerParagraph = document.querySelector("footer p");
 footerParagraph.textContent = siteContent["footer"]["copyright"];
+
+// Stretch
+const button = document.querySelector("button");
+const body = document.querySelector("body");
+button.addEventListener("click", () => {
+  body.style.backgroundColor = "#CCC";
+});
